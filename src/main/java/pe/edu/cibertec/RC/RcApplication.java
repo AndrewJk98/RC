@@ -5,6 +5,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 public class RcApplication {
+	public int Ex; //maldita
+
 	int number = 10;
 	public static void main(String[] args) {
 		SpringApplication.run(RcApplication.class, args);
