@@ -9,6 +9,7 @@ public class Productos {
     public String EstadoProducto;
 
     public Productos() {
+        
     }
 
     public Productos(int productoId, String nombreProducto, String marcaProducto,
