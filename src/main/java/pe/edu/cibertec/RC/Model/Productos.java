@@ -8,6 +8,7 @@ public class Productos {
     public String PrecioProducto;
     public String EstadoProducto;
 
+
     public Productos(int productoId, String nombreProducto, String marcaProducto,
                      String detalleProducto, String precioProducto, String estadoProducto) {
         ProductoId = productoId;
