@@ -13,7 +13,7 @@ public class Detalle {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Getter @Setter
-    private int idDetalle;
+    private long idDetalle;
     @Getter @Setter
     private int idVenta;
     @Getter @Setter
