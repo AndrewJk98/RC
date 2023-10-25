@@ -1,68 +1,27 @@
 package pe.edu.cibertec.RC.Model;
 
+import jakarta.persistence.*;
+import lombok.Getter;
+import lombok.Setter;
+
+@Table(name = "Products")
+@Entity
 public class Productos {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Getter @Setter
     public int ProductoId;
+    @Getter @Setter
     public String NombreProducto;
+    @Getter @Setter
     public String MarcaProducto;
+    @Getter @Setter
     public String DetalleProducto;
+    @Getter @Setter
     public String PrecioProducto;
+    @Getter @Setter
     public String EstadoProducto;
+    @Getter @Setter
+    private String imagenProducto;
 
-    public Productos(int productoId, String nombreProducto, String marcaProducto,
-                     String detalleProducto, String precioProducto, String estadoProducto) {
-        ProductoId = productoId;
-        NombreProducto = nombreProducto;
-        MarcaProducto = marcaProducto;
-        DetalleProducto = detalleProducto;
-        PrecioProducto = precioProducto;
-        EstadoProducto = estadoProducto;
-    }
-
-    public int getProductoId() {
-        return ProductoId;
-    }
-
-    public void setProductoId(int productoId) {
-        ProductoId = productoId;
-    }
-
-    public String getNombreProducto() {
-        return NombreProducto;
-    }
-
-    public void setNombreProducto(String nombreProducto) {
-        NombreProducto = nombreProducto;
-    }
-
-    public String getMarcaProducto() {
-        return MarcaProducto;
-    }
-
-    public void setMarcaProducto(String marcaProducto) {
-        MarcaProducto = marcaProducto;
-    }
-
-    public String getDetalleProducto() {
-        return DetalleProducto;
-    }
-
-    public void setDetalleProducto(String detalleProducto) {
-        DetalleProducto = detalleProducto;
-    }
-
-    public String getPrecioProducto() {
-        return PrecioProducto;
-    }
-
-    public void setPrecioProducto(String precioProducto) {
-        PrecioProducto = precioProducto;
-    }
-
-    public String getEstadoProducto() {
-        return EstadoProducto;
-    }
-
-    public void setEstadoProducto(String estadoProducto) {
-        EstadoProducto = estadoProducto;
-    }
 }

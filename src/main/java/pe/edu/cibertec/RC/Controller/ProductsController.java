@@ -119,7 +119,7 @@ public class ProductsController {
         detalle.setPrecio(Double.parseDouble(producto.getPrecioProducto()));
         detalle.setCantidad(1);
         detalle.setSubtotal(Double.parseDouble(producto.getPrecioProducto()));
-        detalle.setImagen(producto.getImagenProducto());
+        //detalle.setImagen(producto.getImagenProducto());
         return detalle;
     }
 
