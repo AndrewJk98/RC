@@ -146,7 +146,7 @@ public class ProductsController {
         return venta;
     }
 
-
+//joel hizo esto
 
 
     private void actualizarModelo(Model model, double subtotal, double precioEnvio, double descuento, double total) {
