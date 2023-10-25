@@ -7,5 +7,5 @@ import pe.edu.cibertec.RC.Model.Usuarios;
 import java.util.List;
 import java.util.Optional;
 
-public interface UserDao extends JpaRepository<Usuarios, Long> {
+public interface UserDao extends JpaRepository<Usuarios, Integer> {
 }

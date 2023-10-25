@@ -1,13 +1,11 @@
 package pe.edu.cibertec.RC.Model;
 
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
 @Table(name = "Detail")
+@Entity
 public class Detalle {
 
     @Id
