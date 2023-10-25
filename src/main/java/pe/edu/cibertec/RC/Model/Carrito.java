@@ -1,18 +1,16 @@
 package pe.edu.cibertec.RC.Model;
 
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
 @Table(name = "Cart")
+@Entity
 public class Carrito {
 @Id
 @GeneratedValue(strategy = GenerationType.IDENTITY)
 @Getter @Setter
-public long id;
+public int id;
 @Getter @Setter
 public String nombre;
 @Getter @Setter
